@@ -22,8 +22,8 @@ export const Header = () => {
           </li>
         </ul>
         <div className='menu'>
-          <Button type="secondary">Register</Button>
-          <Button type="primary">Sing in</Button>
+          <Button type="secondary" height='38px'>Register</Button>
+          <Button type="primary" height='38px'>Sing in</Button>
         </div>
       </nav>
       <div className="hamburger">
