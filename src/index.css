@@ -1,13 +1,78 @@
-body {
+:root {
+  /* Color Palette */
+  --color-primary: #1a4091;
+  --color-secondary: #f3f9fc;
+  --color-active: #e5f4fc;
+  --color-white: #ffffff;
+  --color-default: #f8f9fa;
+  --color-black: #000;
+  --color-gray: #cccccc;
+  --color-danger: #dc3545;
+  --color-success: #198754;
+  --color-warning: #ffc107;
+
+  /* Border */
+  --border-radius: 4px;
+  --border-radius-base: 1px;
+  --border: 1px solid #cccccc;
+  --border-blue: 1px solid #00bcd4;
+  --border-shadow: rgba(0, 0, 0, 0.067) 0px 1px 6px;
+
+  /* Font */
+  /* --font-family: 'Open Sans', sans-serif; */
+  --font-family: 'Poppins', sans-serif;
+  --font-size-base: 1.6rem;
+  --font-size-large: 2.0rem;
+  --font-size-xlarge: 2.4rem;
+  --font-size-xxlarge: 2.8rem;
+  --font-size-small: 1.2rem;
+  --font-size-xsmall: 1.0rem;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+
+  /* Spacing */
+  --spacing-base: 1.6rem;
+  --spacing-large: 2.0rem;
+  --spacing-small: 1.2rem;
+  --spacing-tiny: 0.8rem;
+
+  /* Layout */
+  --layout-header-height: 56px;
+  --layout-button-height: 56px;
+  --layout-button-min-width: 200px;
+  --layout-container-max-width: 1024px;
+
+  /* Media Queries */
+  --media-query-small: 600px;
+  --media-query-medium: 960px;
+  --media-query-large: 1280px;
+  --media-query-xlarge: 1920px;
+
+  /* Z-index */
+  --z-index-base: 1;
+  --z-index-header: 5;
+  --z-index-modal: 10;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Clean all base styles */
+html, body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: 62.5%;
+  color: #333;
+  background-color: var(--color-white);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  margin: 0;
+  padding: 0;
 }

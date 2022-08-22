@@ -1,0 +1,61 @@
+.button {
+  align-items: center;
+  background: var(--color-default);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  color: var(--color-primary);
+  display: flex;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  gap: 8px;
+  letter-spacing: 1,5px;
+  justify-content: center;
+  padding: 8px 24px;
+  position: relative;
+  outline: none;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0px;
+    margin: auto;
+    transition: all 350ms linear 0s;
+  }
+
+  &:hover::before {
+      background: #ffffff1a;
+  }
+
+  &:active::before {
+      background: #ffffff33;
+  }
+
+  &-primary {
+    background: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  &-secondary {
+    background: var(--color-white);
+    color: var(--color-primary);
+
+    &:hover {
+      background: var(--color-secondary);
+    }
+  }
+
+  &-tertiary {
+    background: var(--color-white);
+    color: var(--color-primary);
+    border: none;
+
+    &:hover {
+      background: var(--color-secondary);
+    }
+
+    &:active {
+      background: var(--color-active);
+    }
+  }
+}

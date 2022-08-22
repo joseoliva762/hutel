@@ -1,0 +1,32 @@
+.heading {
+  align-items: flex-start;
+  background: var(--color-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  padding: 64px 36px 76px;
+  width: 100%;
+
+  .title {
+    color: var(--color-primary);
+    cursor: default;
+    font-size: var(--font-size-xxlarge);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.2;
+  }
+
+  .description {
+    color: var(--color-black);
+    cursor: default;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    padding: 32px 20px;
+  }
+}

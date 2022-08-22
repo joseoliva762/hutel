@@ -1,0 +1,25 @@
+.page-layout {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.layout {
+  @extend .page-layout;
+  min-height: 100vh;
+  height: 100%;
+
+  .container {
+    @extend .page-layout;
+    position: relative;
+    overflow: auto;
+    height: 100%;
+
+    .content {
+      @extend .page-layout;
+      position: relative;
+    }
+  }
+}
